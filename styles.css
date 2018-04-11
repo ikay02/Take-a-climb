@@ -1,0 +1,50 @@
+
+.accordion{
+    background-color:aqua;
+    color:sienna;
+    cursor: pointer;
+    padding: 18px;
+    width:80%;
+    text-align: left;
+    border:none;
+    outline: none;
+    transition:0.5s;
+}
+.active, .accordion:hover{
+    background-color: aliceblue;
+}
+/*stle fr accordion panel which is hidden by default*/
+.panel{
+    padding: 0 18px;
+    background-color: darkgray;
+               /* display: none;*/
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.4s ease-out;
+    width: 77.3%;
+
+}
+.accordion:after{
+    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: blue;
+    float: right;
+    margin-left: 5px;
+}
+.active:after{
+    content: "\2796"; /* Unicode character for "minus" sign (-) */
+
+}
+
+.delete {
+    border-radius: 10px;
+    float: right;
+    position:relative;
+    top:-49px;
+    border: 2px solid aqua;
+    background: transparent;
+    width:100px;
+    height:50px;
+}
+
+  
